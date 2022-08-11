@@ -1,23 +1,11 @@
 import './App.css';
-import Table from './components/table';
+import DataTable from './components/DataTable';
 
-function getBreedList() 
-{  
-  fetch('https://api.thedogapi.com/v1/breeds')
-      .then(response => response.json())
-      .then(data => console.log(data));
-}
-
-
-function App() { 
-
-  const myList =  getBreedList();
-
+function App() {
   return (
     <div className="App">
-      <h1>THE DOG API</h1>       
-      <h1>{myList}</h1>
-      <Table />
+      <h1>THE DOG API</h1>
+      <DataTable />
     </div>
   );
 }
