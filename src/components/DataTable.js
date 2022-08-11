@@ -21,7 +21,7 @@ useEffect(() => {
       <DataGrid 
         rows={tableData}
         columns={columns}
-        pageSize={25}       
+        pageSize={25}    
       />
     </div>
   )
