@@ -2,8 +2,8 @@ import React, {useState, useEffect} from 'react';
 import {DataGrid} from '@mui/x-data-grid';
 
 const columns = [
-  { field: 'name', headerName: 'BREED', width: 670},
-  { field: 'life_span', headerName: 'LIFE SPAN', width: 670},
+  { field: 'name', headerName: 'BREED NAME', width: 670},
+  { field: 'life_span', headerName: 'EXPECTED LIFETIME', width: 670},
 ];
 
 const DataTable = () => {
