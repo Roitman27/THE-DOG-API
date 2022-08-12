@@ -16,6 +16,8 @@ function Details() {
             </Button>
         </div>
     );
+
+
 }
 
 export default Details;
