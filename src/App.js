@@ -1,11 +1,17 @@
 import './App.css';
-import DataTable from './components/DataTable';
+import Home from './pages/Home';
+import Details from './pages/Details';
+import { BrowserRouter as Router, Routes, Route, } from 'react-router-dom';
 
 function App() {
   return (
         <div className="App">
-          <h1>THE DOG API</h1>
-          <DataTable />
+          <Router>
+            <Routes>
+              <Route path="/*" element={<Home />} />
+              <Route path='/details' element={<Details />} />
+            </Routes>  
+          </Router>
         </div>
   );
 }
