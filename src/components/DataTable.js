@@ -19,11 +19,11 @@ const DataTable = () => {
   });
 
    return (
-    <div style={{height: 1450, width:'100%'}}>
+    <div style={{height: 1359, width:'100%'}}>
       <DataGrid 
         rows={tableData}
         columns={columns}
-        pageSize={25}
+        pageSize={24}
         onRowClick={() => {navigate('/details')}} 
       />
     </div>
