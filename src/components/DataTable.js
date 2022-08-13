@@ -20,6 +20,7 @@ import { Link } from '@mui/material'
 import { styled } from '@mui/material/styles';
 import { tableCellClasses } from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
+import { useNavigate } from "react-router-dom";
 
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -94,6 +95,7 @@ TablePaginationActions.propTypes = {
 
 export default function CustomPaginationActionsTable() {
   const [dogList, setdogList] = useState([]);
+  const navigate = useNavigate();
 
   const fetchALLdogs = () => {
     dogFetch(setdogList);
@@ -134,7 +136,7 @@ export default function CustomPaginationActionsTable() {
                 ).map((item) => (
                   <TableRow key={item.name}>
                     <TableCell component="th" scope="row">
-                    <Link  underline="hover" href='/details'> {item.name} </Link>
+                    <Link  underline="hover"> {item.name} </Link>
                     </TableCell>
                     <TableCell style={{ width: 160 }} align="right">
                       {item.life_span}
@@ -151,7 +153,7 @@ export default function CustomPaginationActionsTable() {
               <TableFooter>
                 <TableRow>
                   <TablePagination
-                    rowsPerPageOptions={25}
+                    rowsPerPageOptions={[5, 10, 25]}
                     colSpan={3}
                     count={dogList.length}
                     rowsPerPage={rowsPerPage}
