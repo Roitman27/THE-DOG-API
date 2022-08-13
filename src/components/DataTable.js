@@ -16,7 +16,6 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import LastPageIcon from '@mui/icons-material/LastPage';
 import { dogFetch } from '../API/dogFetch';
-import { Link } from '@mui/material'
 import { styled } from '@mui/material/styles';
 import { tableCellClasses } from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
@@ -153,7 +152,7 @@ export default function CustomPaginationActionsTable() {
               <TableFooter>
                 <TableRow>
                   <TablePagination
-                    rowsPerPageOptions={[5, 10, 25]}
+                    rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}
                     colSpan={3}
                     count={dogList.length}
                     rowsPerPage={rowsPerPage}

@@ -1,33 +1,13 @@
-/*import React from "react";
-import { Button } from "@mui/material";
-import { useNavigate } from 'react-router-dom';
-
-function Details() {
-    const navigate = useNavigate();
-
-    return(
-        <div>
-            <h1>DETAILS PAGE</h1>
-            <Button 
-                onClick={() => {
-                    navigate('/home');
-                }}>
-                    GO TO HOME PAGE
-            </Button>
-        </div>
-    );
-
-
-}
-*/
-
 import React from "react";
-import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { Typography, Card, CardMedia } from "@mui/material";
+import { Button } from "@mui/material";
+import { useNavigate } from 'react-router-dom';
+import './Details.css'
 
 
 function Details() {
+const navigate = useNavigate();
   const location = useLocation();
   const dog = location.state.dog;
 
@@ -42,9 +22,8 @@ function Details() {
         <CardMedia
           id="idImage"
           component="img"
-          height="200px"
-          width="200px"
-          image={`${dog.image.url}?w=600&h=600&fit=crop&auto=format`}
+          text-align='center'
+          image={`${dog.image.url}`}
         />
       </div>
       <div>
@@ -63,9 +42,15 @@ function Details() {
         <h1>Temperament</h1>
         <Typography>{dog.temperament}</Typography>
         <br></br>
-        <button className="button">
-          <Link className="button" to="/">Home</Link>
-        </button>
+      </div>
+      <div>
+        <Button 
+             variant="contained"
+            onClick={() => {
+                    navigate('/home');
+                }}>
+                    GO TO HOME PAGE
+        </Button>
       </div>
     </Card>
   );
