@@ -135,8 +135,8 @@ export default function CustomPaginationActionsTable() {
                   : dogList
                 ).map((item) => (
                   <TableRow key={item.name}>
-                    <TableCell component="th" scope="row">
-                    <Link  underline="hover"> {item.name} </Link>
+                    <TableCell component="th" scope="row" onClick={() => {navigate("/Details", {state: {dog: item}})}}>
+                      {item.name}
                     </TableCell>
                     <TableCell style={{ width: 160 }} align="right">
                       {item.life_span}
