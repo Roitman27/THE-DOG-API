@@ -16,7 +16,21 @@ import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import LastPageIcon from '@mui/icons-material/LastPage';
 import { dogFetch } from '../API/dogFetch';
+import { Link } from '@mui/material'
+import { styled } from '@mui/material/styles';
+import { tableCellClasses } from '@mui/material/TableCell';
+import TableHead from '@mui/material/TableHead';
 
+
+const StyledTableCell = styled(TableCell)(({ theme }) => ({
+  [`&.${tableCellClasses.head}`]: {
+    backgroundColor: theme.palette.common.black,
+    color: theme.palette.common.white,
+  },
+  [`&.${tableCellClasses.body}`]: {
+    fontSize: 14,
+  },
+}));
 function TablePaginationActions(props) {
   const theme = useTheme();
   const { count, page, rowsPerPage, onPageChange } = props;
@@ -107,47 +121,53 @@ export default function CustomPaginationActionsTable() {
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 500 }} aria-label="custom pagination table">
-        <TableBody>
-          {(rowsPerPage > 0
-            ? dogList.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-            : dogList
-          ).map((item) => (
-            <TableRow key={item.name}>
-              <TableCell component="th" scope="row">
-                {item.name}
-              </TableCell>
-              <TableCell style={{ width: 160 }} align="right">
-                {item.life_span}
-              </TableCell>
-            </TableRow>
-          ))}
-
-          {emptyRows > 0 && (
-            <TableRow style={{ height: 53 * emptyRows }}>
-              <TableCell colSpan={6} />
-            </TableRow>
-          )}
-        </TableBody>
-        <TableFooter>
+      <TableHead>
           <TableRow>
-            <TablePagination
-              rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}
-              colSpan={3}
-              count={dogList.length}
-              rowsPerPage={rowsPerPage}
-              page={page}
-              SelectProps={{
-                inputProps: {
-                  'aria-label': 'rows per page',
-                },
-                native: true,
-              }}
-              onPageChange={handleChangePage}
-              onRowsPerPageChange={handleChangeRowsPerPage}
-              ActionsComponent={TablePaginationActions}
-            />
+            <StyledTableCell>BREEDS</StyledTableCell>
+            <StyledTableCell align="right">LIFE TIME</StyledTableCell>
           </TableRow>
-        </TableFooter>
+            </TableHead>
+              <TableBody>
+                {(rowsPerPage > 0
+                  ? dogList.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                  : dogList
+                ).map((item) => (
+                  <TableRow key={item.name}>
+                    <TableCell component="th" scope="row">
+                    <Link  underline="hover" href='/details'> {item.name} </Link>
+                    </TableCell>
+                    <TableCell style={{ width: 160 }} align="right">
+                      {item.life_span}
+                    </TableCell>
+                  </TableRow>
+                ))}
+
+                {emptyRows > 0 && (
+                  <TableRow style={{ height: 53 * emptyRows }}>
+                    <TableCell colSpan={6} />
+                  </TableRow>
+                )}
+              </TableBody>
+              <TableFooter>
+                <TableRow>
+                  <TablePagination
+                    rowsPerPageOptions={25}
+                    colSpan={3}
+                    count={dogList.length}
+                    rowsPerPage={rowsPerPage}
+                    page={page}
+                    SelectProps={{
+                      inputProps: {
+                        'aria-label': 'rows per page',
+                      },
+                      native: true,
+                    }}
+                    onPageChange={handleChangePage}
+                    onRowsPerPageChange={handleChangeRowsPerPage}
+                    ActionsComponent={TablePaginationActions}
+                  />
+                </TableRow>
+              </TableFooter>
       </Table>
     </TableContainer>
   );
