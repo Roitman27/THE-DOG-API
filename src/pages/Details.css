@@ -1,5 +1,8 @@
-#idImage {
-    width: 100%;
-    height: 800px;
-    text-align: center;
+#card {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#botao {
+    margin-bottom: 15px;
 }

@@ -7,44 +7,41 @@ import './Details.css'
 
 
 function Details() {
-const navigate = useNavigate();
+  const navigate = useNavigate();
   const location = useLocation();
   const dog = location.state.dog;
 
   return (
-    <Card
-      sx={{
-        display: "grid",
-        gridAutoFlow: "row",
-      }}
+    <Card 
+      id="card"
+      sx={{ maxWidth: 900 }}
     >
       <div className="image">
         <CardMedia
-          id="idImage"
           component="img"
-          text-align='center'
           image={`${dog.image.url}`}
         />
       </div>
       <div>
-        <h1>Name</h1>
-        <Typography>{dog.name}</Typography>
-        <h1>Life Span</h1>
+        <br></br>
+        <h1>{dog.name}</h1>
+        <h2>Life Span</h2>
         <Typography>{dog.life_span}</Typography>
-        <h1>Height</h1>
-        <Typography>{dog.height.metric}</Typography>
-        <h1>Weight</h1>
-        <Typography>{dog.weight.metric}</Typography>
-        <h1>Breed Group</h1>
+        <h2>Height</h2>
+        <Typography>{dog.height.metric} cm</Typography>
+        <h2>Weight</h2>
+        <Typography>{dog.weight.metric} kg</Typography>
+        <h2>Breed Group</h2>
         <Typography>{dog.breed_group}</Typography>
-        <h1>Bred For</h1>
+        <h2>Bred For</h2>
         <Typography>{location.state.dog.bred_for}</Typography>
-        <h1>Temperament</h1>
+        <h2>Temperament</h2>
         <Typography>{dog.temperament}</Typography>
         <br></br>
       </div>
       <div>
         <Button 
+            id="botao"
              variant="contained"
               onClick={() => {
                     navigate('/home');
