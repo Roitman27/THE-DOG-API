@@ -16,14 +16,13 @@ function Details() {
       id="card"
       sx={{ maxWidth: 900 }}
     >
-      <div className="image">
+      <div>
         <CardMedia
           component="img"
           image={`${dog.image.url}`}
         />
       </div>
       <div>
-        <br></br>
         <h1>{dog.name}</h1>
         <h2>Life Span</h2>
         <Typography>{dog.life_span}</Typography>
@@ -37,7 +36,6 @@ function Details() {
         <Typography>{location.state.dog.bred_for}</Typography>
         <h2>Temperament</h2>
         <Typography>{dog.temperament}</Typography>
-        <br></br>
       </div>
       <div>
         <Button 
