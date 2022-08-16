@@ -23,7 +23,7 @@ OU
 
 Este projeto foi desenvolvido como desafio FRONT-END, foi utilizado os frameworks REACT com MATERIAL UI. 
 
-A pagina /home, lista todas as raças e tempo de vida dos cachorros catalogados pela API the dog api, você tambem pode selecionar a quantidade de cachorros catalogados por pagina, podendo selecionar 5/10/25 por pagina. Ao clicar no botão 'DETAILS' você será redirecionado para a pagina /details, onde será mostrado todas as informações contidas sobre o respectivo cachorro. Para retornar a pagina inicial você pode retornar clicando sobro o botão 'RETURN TO HOME'. 
+A pagina /home, lista todas as raças e tempo de vida dos cachorros catalogados pela API the dog api, você tambem pode selecionar a quantidade de cachorros catalogados por pagina, podendo selecionar 5/10/25 por pagina. Ao clicar no botão 'DETAILS' você será redirecionado para a pagina /details, onde será mostrado todas as informações contidas sobre o respectivo cachorro. Para retornar a pagina inicial você pode retornar clicando sobro o botão 'GO TO HOME PAGE'. 
 
 ![image](https://user-images.githubusercontent.com/55003168/184941923-7685574a-579a-476a-a46c-60f6010e3d8b.png)
 
