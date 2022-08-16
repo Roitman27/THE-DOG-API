@@ -1,3 +1,19 @@
+# INICIALIZÇÃO 
+  
+1 - Clone este projeto para sua maquina
+2 - Inicie utilizando NPM START
+![image](https://user-images.githubusercontent.com/55003168/184928151-585689fc-c079-418b-8f6c-63e7d51b2635.png)
+ 
+OU
+  
+1 - Clone este projeto para sua maquina
+2 - Instale o yarn com o comando "yarn" em seu terminal
+3 - Inicie o projeto com "yarn start"
+ 
+![image](https://user-images.githubusercontent.com/55003168/184927282-ff4aee8c-b83f-4602-856a-f3fc44a45b4e.png)
+![image](https://user-images.githubusercontent.com/55003168/184927932-29293232-9123-4bc7-8308-db7398cbac7a.png)
+
+
 # PROJETO FRONT-END - THE DOG API
 
 Este projeto foi desenvolvido como desafio FRONT-END, foi utilizado os frameworks REACT com MATERIAL UI. 
