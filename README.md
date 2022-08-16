@@ -1,4 +1,4 @@
-# INICIALIZÇÃO 
+# INICIALIZAÇÃO 
   
 1 - Clone este projeto para sua maquina
 2 - Inicie utilizando NPM START
