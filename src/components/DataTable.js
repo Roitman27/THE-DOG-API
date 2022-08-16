@@ -20,6 +20,7 @@ import { styled } from '@mui/material/styles';
 import { tableCellClasses } from '@mui/material/TableCell';
 import TableHead from '@mui/material/TableHead';
 import { useNavigate } from "react-router-dom";
+import { Button } from "@material-ui/core";
 
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -124,6 +125,7 @@ export default function CustomPaginationActionsTable() {
       <Table sx={{ minWidth: 500 }} aria-label="custom pagination table">
       <TableHead>
           <TableRow>
+            <StyledTableCell></StyledTableCell>
             <StyledTableCell>BREEDS</StyledTableCell>
             <StyledTableCell align="right">LIFE TIME</StyledTableCell>
           </TableRow>
@@ -134,7 +136,10 @@ export default function CustomPaginationActionsTable() {
                   : dogList
                 ).map((item) => (
                   <TableRow key={item.name}>
-                    <TableCell component="th" scope="row" onClick={() => {navigate("/Details", {state: {dog: item}})}}>
+                    <TableCell style={{ width: '5%' }}>
+                      <Button color='primary' variant="outlined" size="small" onClick={() => {navigate("/Details", {state: {dog: item}})}}>Details</Button>
+                    </TableCell>
+                    <TableCell component="th" scope="row">
                       {item.name}
                     </TableCell>
                     <TableCell style={{ width: 160 }} align="right">
@@ -152,7 +157,7 @@ export default function CustomPaginationActionsTable() {
               <TableFooter>
                 <TableRow>
                   <TablePagination
-                    rowsPerPageOptions={[5, 10, 25, { label: 'All', value: -1 }]}
+                    rowsPerPageOptions={[5, 10, 25]}
                     colSpan={3}
                     count={dogList.length}
                     rowsPerPage={rowsPerPage}

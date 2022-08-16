@@ -46,7 +46,7 @@ const navigate = useNavigate();
       <div>
         <Button 
              variant="contained"
-            onClick={() => {
+              onClick={() => {
                     navigate('/home');
                 }}>
                     GO TO HOME PAGE
