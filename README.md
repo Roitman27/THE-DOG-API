@@ -3,6 +3,7 @@
 1 - Clone este projeto para sua maquina
 
 2 - Inicie utilizando NPM START
+
 ![image](https://user-images.githubusercontent.com/55003168/184928151-585689fc-c079-418b-8f6c-63e7d51b2635.png)
  
 OU
