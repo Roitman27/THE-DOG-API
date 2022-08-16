@@ -27,6 +27,8 @@ A pagina /home, lista todas as raças e tempo de vida dos cachorros catalogados 
 
 ![image](https://user-images.githubusercontent.com/55003168/184941923-7685574a-579a-476a-a46c-60f6010e3d8b.png)
 
-![image](https://user-images.githubusercontent.com/55003168/184466454-1e576f9f-9d32-4d20-9021-b69d6be25cfa.png)
+![image](https://user-images.githubusercontent.com/55003168/184966426-8c29bb4d-ffa7-4147-a680-0ffb8869cfcb.png)
 
-![image](https://user-images.githubusercontent.com/55003168/184466458-02664bbe-f54b-45b6-a544-5184489fb1c1.png)
+![image](https://user-images.githubusercontent.com/55003168/184966631-2d685ac7-6764-4a7f-b9be-3a0b0e758a03.png)
+
+
