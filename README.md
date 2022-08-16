@@ -25,7 +25,7 @@ Este projeto foi desenvolvido como desafio FRONT-END, foi utilizado os framework
 
 A pagina /home, lista todas as raças e tempo de vida dos cachorros catalogados pela API the dog api. Ao clicar sobre a raça do cachorro você será redirecionado para a pagina /details, onde será mostrado todas as informações contidas sobre o respectivo cachorro. 
 
-![image](https://user-images.githubusercontent.com/55003168/184466441-2c951827-5552-42f0-9f5a-42f2a4ed1f2e.png)
+![image](https://user-images.githubusercontent.com/55003168/184941923-7685574a-579a-476a-a46c-60f6010e3d8b.png)
 
 ![image](https://user-images.githubusercontent.com/55003168/184466454-1e576f9f-9d32-4d20-9021-b69d6be25cfa.png)
 
