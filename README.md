@@ -2,7 +2,11 @@
   
 1 - Clone este projeto para sua maquina
 
-2 - Inicie utilizando "npm start"
+2 - Instale o npm com o comando "npm install"
+
+![image](https://user-images.githubusercontent.com/55003168/184995416-d5eb5b5c-b988-4f9b-80ca-b821a0e6fdbf.png)
+
+3 - Inicie utilizando "npm start"
 
 ![image](https://user-images.githubusercontent.com/55003168/184928151-585689fc-c079-418b-8f6c-63e7d51b2635.png)
  
