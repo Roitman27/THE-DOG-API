@@ -11,9 +11,10 @@ OU
 
 2 - Instale o yarn com o comando "yarn" em seu terminal
 
-3 - Inicie o projeto com "yarn start"
- 
 ![image](https://user-images.githubusercontent.com/55003168/184927282-ff4aee8c-b83f-4602-856a-f3fc44a45b4e.png)
+
+3 - Inicie o projeto com "yarn start"
+
 ![image](https://user-images.githubusercontent.com/55003168/184927932-29293232-9123-4bc7-8308-db7398cbac7a.png)
 
 
